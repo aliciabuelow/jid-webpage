@@ -65,7 +65,7 @@ header a {
 }
 
 .about-content {
-    margin: 20px 0;
+    margin: 20px 10px;
 }
 
 .about-content h3 {
@@ -90,6 +90,17 @@ header a {
     opacity: 0.8;
     font-size: 14px;
     line-height: 1.5;
+}
+
+.about-content a {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
 }
 
 .featured-photo {
