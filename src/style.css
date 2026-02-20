@@ -57,6 +57,10 @@ header a {
     
 }
 
+hr {
+    opacity: 0.3;
+}
+
 .about-section {
     display: block;
     margin: 0 auto;
@@ -107,6 +111,72 @@ header a {
     width: 100%;
 }
 
+.songs-section {
+    background-image: linear-gradient(rgba(10, 7, 41, 0.8), rgba(10, 7, 41, 0.8)), url(../images/jid-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.songs-section h3 {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 3px 5px;
+    background-color: #2b2b2b;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.songs-section h2 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.card-video {
+    width: 100%;
+}
+
+.card-body {
+    padding: 25px;
+    color: var(--secondary-color)
+}
+
+.card-body h4 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card-body p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.card-body a {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
 .grid {
     display: grid;
     grid-gap: 60px;
@@ -114,6 +184,11 @@ header a {
 
 .grid-2 {
     grid-template-columns: 1fr 1fr;
+}
+
+.grid-songs {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
 }
 
 .grid-3 {
@@ -187,6 +262,14 @@ header a {
 
     .featured-photo {
         display: none;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-body a {
+        max-width: 75%;
     }
 
     .footer-container {
