@@ -116,7 +116,7 @@ hr {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 50px;
+    padding: 70px;
 }
 
 .songs-section h3 {
@@ -141,6 +141,7 @@ hr {
 }
 
 .card {
+    max-width: 370px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
 }
@@ -262,6 +263,10 @@ hr {
 
     .featured-photo {
         display: none;
+    }
+
+    .card {
+        max-width: 100%;
     }
 
     .card-body {
