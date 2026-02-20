@@ -1,10 +1,12 @@
 :root {
     --primary-color: #2a1baa;
     --secondary-color: #050319;
+    --accent-color: #5CD5E3;
+    --accent-background: #1D2E3B;
 }
 
 body {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: var(--secondary-color);
     font-family: 'Roboto', sans-serif;
@@ -12,7 +14,7 @@ body {
 
 header {
     padding: 100px 0;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)), url(../images/jid-header.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0,0,0,1)), url(../images/jid-header.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -55,6 +57,59 @@ header a {
     
 }
 
+.about-section {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    background-color: var(--secondary-color);
+}
+
+.about-content {
+    margin: 20px 0;
+}
+
+.about-content h3 {
+    width: fit-content;
+    padding: 3px 5px;
+    background-color: var(--accent-background);
+    color: var(--accent-color);
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.about-content h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about-content p {
+    font-weight: 300;
+    opacity: 0.8;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.featured-photo {
+    max-width: 550px;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 60px;
+}
+
+.grid-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
 .footer-container {
     color: #fff;
     background-image: linear-gradient(rgba(10, 7, 41, 0.6), rgba(10, 7, 41, 0.8)), url(../images/jid-footer.jpg);
@@ -62,12 +117,6 @@ header a {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-gap: 60px;
 }
 
 .footer-container h4 {
@@ -104,7 +153,7 @@ header a {
     opacity: 0.7;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
     header {
         padding: 60px;
     }
@@ -126,19 +175,20 @@ header a {
         font-size: 10px;
     }
 
+    .featured-photo {
+        display: none;
+    }
+
     .footer-container {
         padding: 15px auto;
     }
 
     .grid {
-        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
     }
 
-    .footer-container li {
+    .footer-container li, .footer-container p {
         font-size: 12px;
-    }
-
-    .footer-container p {
-        font-size: 11px;
     }
 }
