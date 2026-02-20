@@ -112,11 +112,12 @@ hr {
 }
 
 .songs-section {
-    background-image: linear-gradient(rgba(10, 7, 41, 0.8), rgba(10, 7, 41, 0.8)), url(../images/jid-3.jpg);
+    background-image: linear-gradient(rgba(5, 3, 20, 0.8), rgba(10, 7, 41, 0.8)), url(../images/jid-3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 70px;
+    padding: 80px;
+    margin: 0;
 }
 
 .songs-section h3 {
@@ -178,6 +179,41 @@ hr {
     text-decoration: none;
 }
 
+.more-section {
+    display: block;
+    margin: 0 auto;
+    padding: 80px;
+    color: #fff;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.more-section h3 {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 3px 5px;
+    background-color: var(--accent-background);
+    color: var(--accent-color);
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.more-section h2 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.box-video {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
 .grid {
     display: grid;
     grid-gap: 60px;
@@ -190,6 +226,11 @@ hr {
 .grid-songs {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 15px;
+}
+
+.grid-more {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
 }
 
 .grid-3 {
@@ -284,6 +325,10 @@ hr {
     .grid {
         grid-template-columns: 1fr;
         grid-gap: 15px;
+    }
+
+    .grid-more {
+        grid-template-columns: 1fr 1fr;
     }
 
     .footer-container li, .footer-container p {
