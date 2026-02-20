@@ -93,7 +93,6 @@ header a {
 }
 
 .featured-photo {
-    max-width: 550px;
     width: 100%;
 }
 
@@ -153,7 +152,7 @@ header a {
     opacity: 0.7;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     header {
         padding: 60px;
     }
