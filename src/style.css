@@ -67,7 +67,7 @@ header a {
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
-    grid-gap: 20px;
+    grid-gap: 60px;
 }
 
 .footer-container h4 {
@@ -128,6 +128,10 @@ header a {
 
     .footer-container {
         padding: 15px auto;
+    }
+
+    .grid {
+        grid-gap: 20px;
     }
 
     .footer-container li {
