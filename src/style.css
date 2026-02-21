@@ -109,8 +109,7 @@ hr {
 }
 
 .featured-photo {
-    filter:  brightness(65%) contrast(110%) saturate(84%);
-    opacity: 0.8;
+    filter:  brightness(85%) contrast(110%) saturate(84%);
     width: 100%;
 }
 
